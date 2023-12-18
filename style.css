@@ -1,0 +1,109 @@
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.divider {
+  border: 1px solid #333;
+}
+
+.header-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.headerH1 {
+  font-size: 25px;
+  margin: 0;
+  padding-top: 15px;
+  height: 70px;
+  background-color: #333;
+  text-align: center;
+  & a {
+    color: azure;
+  }
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  & ul {
+    padding: 20px 0;
+
+    & li {
+      display: inline;
+      padding: 0 10px;
+      & a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.main-wrapper {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#mainPage {
+  & h1 {
+    margin-bottom: 10px;
+  }
+
+  & #products {
+    margin: 20px 0;
+    & h2 {
+
+      color: #395f43;
+      background-image: -webkit-linear-gradient(
+        0deg,
+        #395f43 0%,
+        #5a3f66 33%,
+        #e07191 67%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  & ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  & a {
+    /** TEXT GRADIENT */
+    color: #31462f;
+    background-image: -webkit-linear-gradient(
+      0deg,
+      #31462f 0%,
+      #221f35 33%,
+      #a11235 67%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
